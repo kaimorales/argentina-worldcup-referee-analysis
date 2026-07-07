@@ -1,0 +1,10 @@
+metric,value,source_note
+total_penalties_awarded,23,"Open-play penalties across the 2022 WC (excludes shootouts); widely reported, 6 fewer than 2018"
+total_matches,64,Standard 32-team World Cup match count
+total_teams,32,
+team_matches,128,"64 matches x 2 teams = 128 team-match observations"
+argentina_penalties_for,5,"Reported as the most penalties awarded to a single team in one World Cup edition"
+argentina_penalties_against,2,Both conceded in the final vs France
+argentina_matches_played,7,Reached and won the final
+argentina_yellow_cards,16,Tournament total across 7 matches (0 red cards)
+argentina_red_cards,0,
