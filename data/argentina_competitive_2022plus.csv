@@ -1,0 +1,4 @@
+tournament,competition,organizer,games,pens_for,pens_against,field_pens_per_game,fold_vs_field,rank,total_teams,source,confidence,note
+2022,FIFA World Cup,FIFA,7,5,2,0.180,3.98,1,32,StatsBomb,high,"All-time record; #1 of 32 in penalties; 4x the field"
+2024,Copa America,CONMEBOL,6,1,1,0.156,1.07,4,16,StatsBomb,high,"WON the tournament but got AVERAGE penalties (1 in 6 games); NOT an outlier"
+2026,FIFA World Cup,FIFA,5,2,0,,,,,web,provisional,"Ongoing; ~0.40/game (~2x baseline); both penalties missed by Messi"

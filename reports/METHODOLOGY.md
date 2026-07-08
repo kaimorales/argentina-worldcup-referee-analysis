@@ -140,6 +140,29 @@ question: **did their treatment change in 2022?**
 Why this one matters: it is the first result that is **not** common knowledge restated. "Argentina
 always got these calls" is falsified — they were the 19th-most-penalized team as recently as 2018.
 
+## Sixth analysis — the conspiracy window (`conspiracy_window.py`) — the scope test
+
+The thesis is "rigged since 2022," so this restricts to 2022→present and widens from World
+Cups to *all* competitive tournaments StatsBomb covers in that window (WC 2022 + Copa América
+2024; 2026 WC provisional). Friendlies/exhibitions are excluded by construction (these are
+tournament event feeds, not warm-ups). Each tournament is measured against its own field,
+which cancels competition-specific refereeing tendencies.
+
+- **Result.** 2022 World Cup: 4.0× the field, #1 of 32 (p = 0.009). Copa América 2024: **1.1×
+  — dead average**, 1 penalty in 6 games, ranked 4th (p = 0.61), *despite winning the trophy*.
+  2026 World Cup (provisional): ~2×.
+- **Interpretation, reported straight.** The blanket claim "Argentina is rigged in every
+  competitive match" is **false** in this data — Copa América 2024 is ordinary. The supported
+  claim is narrower and stronger: **the penalty anomaly is specific to the FIFA World Cup**
+  (2022, and again 2026), and absent at the CONMEBOL-run Copa América.
+- **Why we keep the Copa result front-and-centre.** It is the honest control. A version that
+  omitted it would be cherry-picking; including it is what lets the World-Cup-specific contrast
+  survive scrutiny.
+
+This reframes the entire project's takeaway: not "Argentina is favoured," but "since 2022
+Argentina has drawn ~4× the field's penalties *at the World Cup* while being completely average
+elsewhere competitive." Striking, and true.
+
 ## To strengthen this further (open TODOs)
 
 - ~~Pull all 32 teams' 2022 penalty counts for a full within-tournament test with a

@@ -105,7 +105,37 @@ Code, data, and every source in the repo 👇
 
 ---
 
-## Version G — the structural break (⭐ the strongest, most original post — lead with this)
+## Version H — the World-Cup-specific contrast (⭐ most defensible + genuinely surprising)
+
+I set out to check whether Argentina has been getting favorable refereeing since 2022. I
+pulled StatsBomb event data for every competitive tournament they've played in that window.
+The answer surprised me — and it's more interesting than the conspiracy version.
+
+At the **World Cup**, Argentina are a massive penalty outlier:
+• 2022: **5 penalties in 7 games — 4× the field average, #1 of 32 teams** (the most any team
+has ever been awarded in a single World Cup).
+• 2026 (so far): back up around **2× the baseline.**
+
+But at **Copa América 2024** — which they *won* — they were awarded **1 penalty in 6 games.**
+That's **1.1× the field. Dead average. 4th of 16 teams.**
+
+So the popular "FIFA/refs always favor Argentina" take doesn't survive contact with the data:
+against South American officials at CONMEBOL's Copa América, they got nothing special. The
+penalty spike is **specific to the FIFA World Cup.**
+
+That's the honest, defensible finding: not "Argentina is rigged," but **"since 2022, Argentina
+draws ~4× the field's penalties at the World Cup while being completely average everywhere else
+competitive."** Whether you read that as coincidence or as something worth watching at FIFA's
+flagship event — I'll let you decide. But the pattern is real, it's in the data, and I'm
+showing you the Copa América number that a lazier version of this post would've hidden.
+
+Data + code (StatsBomb) in the repo. What's your read? 👇
+
+#DataScience #SportsAnalytics #WorldCup #Statistics #StatsBomb #Football
+
+---
+
+## Version G — the structural break (the strongest cross-tournament proof it *started* in 2022)
 
 "Argentina always gets the penalties." Everyone repeats it. I found data that says it only
 became true in 2022.

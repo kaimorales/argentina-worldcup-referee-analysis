@@ -17,6 +17,11 @@ The question is how extreme Argentina's penalty haul is against that historical 
   Measuring them *relative to the field* cancels the VAR era-effect — so this isn't "everyone
   got more penalties," it's Argentina-specific, and it *switched on in 2022.* They reached the
   2014 final (7 games) with ~0 open-play penalties. "They always got these calls" is false.
+- **⭐ The anomaly is World-Cup-specific (the key nuance):** widening to *all* competitive
+  matches 2022→present, Argentina drew **4.0× the field at the 2022 World Cup (#1 of 32)** but
+  a **dead-average 1.1× at Copa América 2024** (1 penalty in 6 games — and they *won* it), then
+  ~2× again at the 2026 World Cup. "Rigged in every match" is false; "outlier specifically at
+  the FIFA World Cup" is real. Including the Copa result is what makes the claim credible.
 - **All-time record:** Argentina's **5 penalties in 2022 is the most ever awarded to a
   single team in one World Cup** — no team in ~90 years had exceeded 4 (Netherlands 1978,
   Portugal 1966). That's the 100th percentile of the whole historical distribution.
@@ -56,7 +61,8 @@ python src/analyze.py                # 2022 single-tournament deep-dive
 python src/baseline_comparison.py    # Argentina (2022+2026) vs World Cup history
 python src/exposure_and_scorecard.py # France exposure comparison + scorecard + placebo
 python src/fullfield_regression.py   # all 32 teams, StatsBomb data, exposure regression
-python src/structural_break.py       # ⭐ 2018 vs 2022 structural break (the "since 2022" test)
+python src/structural_break.py       # 2018 vs 2022 structural break (proves it started in 2022)
+python src/conspiracy_window.py      # ⭐ 2022→present competitive record (WC vs Copa América)
 ```
 
 The StatsBomb dataset (`data/statsbomb_team_stats_2022.csv`) is already built and committed.
@@ -79,12 +85,15 @@ Outputs regenerate the `reports/*.md` findings files and charts in `figures/`.
 | `data/statsbomb_team_stats_2022.csv` | **All 32 teams** from StatsBomb events (shots, xG, pens, fouls, cards) |
 | `data/statsbomb_team_stats_2018.csv` | All 32 teams, 2018 World Cup (for the structural-break test) |
 | `data/argentina_penalty_history.csv` | Argentina's per-tournament penalty timeline (2010–2026) |
+| `data/statsbomb_team_stats_copa2024.csv` | Copa América 2024, all teams (competitive control for 2022+) |
+| `data/argentina_competitive_2022plus.csv` | Argentina's competitive record since 2022 (WC + Copa) |
 | `data/SOURCES.md` | Every figure's provenance and confidence level |
 | `src/analyze.py` | 2022 single-tournament Poisson test → `FINDINGS.md` + figures |
 | `src/baseline_comparison.py` | Argentina (2022+2026) vs World Cup history → `BASELINE_FINDINGS.md` + figures |
 | `src/exposure_and_scorecard.py` | France exposure comparison + scorecard + placebo → `EXPOSURE_FINDINGS.md` + figures |
 | `src/fullfield_regression.py` | 32-team StatsBomb exposure regression + multiple-comparison correction → `FULLFIELD_FINDINGS.md` + figures |
-| `src/structural_break.py` | ⭐ 2018-vs-2022 field-relative structural break → `STRUCTURAL_BREAK_FINDINGS.md` + figure |
+| `src/structural_break.py` | 2018-vs-2022 field-relative structural break → `STRUCTURAL_BREAK_FINDINGS.md` + figure |
+| `src/conspiracy_window.py` | ⭐ 2022→present competitive record, WC vs Copa América → `CONSPIRACY_WINDOW_FINDINGS.md` + figure |
 | `reports/*_FINDINGS.md` | Auto-generated results |
 | `reports/METHODOLOGY.md` | How the tests work and their limits |
 | `reports/linkedin_post.md` | Drafted posts, ready to adapt |

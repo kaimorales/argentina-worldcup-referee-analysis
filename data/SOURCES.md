@@ -34,6 +34,14 @@ for / 2 against in 7 games.**
 - Per-team fields derived: non-penalty shots, non-penalty xG, penalties for/against, fouls
   won/committed, yellow/red cards.
 
+**Competitive tournaments since 2022 (the conspiracy window):**
+- `data/statsbomb_team_stats_copa2024.csv` — Copa America 2024 (competition 223, season 282),
+  all 32 matches, from StatsBomb open data. **Argentina 2024: 1 penalty for, 1 against, 6
+  games — 1.07x the field per-game rate, ranked 4th of 16. They won the tournament.**
+- `data/argentina_competitive_2022plus.csv` — Argentina's per-tournament competitive record
+  since 2022 (WC 2022 + Copa America 2024 from StatsBomb; 2026 WC provisional). Competitive
+  matches only — no friendlies/exhibitions (these are tournament event-data feeds).
+
 **Historical StatsBomb seasons (for the structural-break test):**
 - `data/statsbomb_team_stats_2018.csv` — 2018 World Cup (season_id 3), all 64 matches. Confirms
   the reported 29 total penalties. **Argentina 2018: 1 penalty for, 2 against, 4 games — 1.10x
