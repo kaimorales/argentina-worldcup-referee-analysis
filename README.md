@@ -20,10 +20,16 @@ The question is how extreme Argentina's penalty haul is against that historical 
   - 2022 → 3.5× expected, **p = 0.015** (significant)
   - 2026 (provisional) → 2.0× expected, p = 0.27 (not significant; only 5 games)
   - **2022 + 2026 pooled → 2.9× expected, p = 0.013** (significant)
+- **It's not just "they attack more":** France — the other finalist, same 7 games — took
+  **more shots (92 vs 76)** for **equal xG (11.5 vs 11.8)** yet got **2.5× fewer penalties.**
+  Per 100 shots, Argentina drew **3× as many** as an equally elite side.
+- **Placebo check passes:** the same outlier test flags Argentina (p = 0.015) but **not**
+  France (p = 0.42) — the signal is Argentina-specific, not "any good team."
 - **The 2026 twist:** Argentina were awarded ≥2 penalties again — but **Messi missed both**,
   the first player ever to miss two in a single World Cup. "Gets the calls" ≠ "always benefits."
-- **Counter-evidence (2022):** the same refs booked them **16 times in 7 games** and put
-  them in the most-carded match in World Cup history. Not "teacher's pet."
+- **Counter-evidence / nuance (2022):** the same refs booked them **16 times in 7 games**,
+  put them in the most-carded match in World Cup history, and they were *not* even the most
+  shot-happy team. Favored on **penalties specifically** — not "teacher's pet" across the board.
 
 This repo is built to be **credible under scrutiny**, not to win an argument. The
 counter-evidence is reported alongside the headline, because on LinkedIn the comment
@@ -35,11 +41,12 @@ come from a possession-heavy side that lives in the opponent's box.
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python src/analyze.py             # 2022 single-tournament deep-dive
-python src/baseline_comparison.py # Argentina (2022+2026) vs World Cup history
+python src/analyze.py               # 2022 single-tournament deep-dive
+python src/baseline_comparison.py   # Argentina (2022+2026) vs World Cup history
+python src/exposure_and_scorecard.py # exposure model + scorecard + placebo control
 ```
 
-Outputs regenerate `reports/FINDINGS.md`, `reports/BASELINE_FINDINGS.md`, and charts in `figures/`.
+Outputs regenerate the `reports/*.md` findings files and charts in `figures/`.
 
 ## Repo layout
 
@@ -51,10 +58,13 @@ Outputs regenerate `reports/FINDINGS.md`, `reports/BASELINE_FINDINGS.md`, and ch
 | `data/team_tournament_penalty_records.csv` | All-time "most penalties to one team" record holders |
 | `data/argentina_subject.csv` | Argentina 2022 + 2026 penalty counts (the subject) |
 | `data/argentina_2026_incidents_provisional.csv` | Best-effort 2026 refereeing incidents (provisional) |
+| `data/team_exposure_2022.csv` | Argentina vs France: shots, xG, penalties (exposure control) |
+| `data/argentina_scorecard_2022.csv` | Multi-metric refereeing scorecard inputs |
 | `data/SOURCES.md` | Every figure's provenance and confidence level |
 | `src/analyze.py` | 2022 single-tournament Poisson test → `FINDINGS.md` + figures |
 | `src/baseline_comparison.py` | Argentina (2022+2026) vs World Cup history → `BASELINE_FINDINGS.md` + figures |
-| `reports/FINDINGS.md` / `reports/BASELINE_FINDINGS.md` | Auto-generated results |
+| `src/exposure_and_scorecard.py` | Exposure model + scorecard + placebo → `EXPOSURE_FINDINGS.md` + figures |
+| `reports/*_FINDINGS.md` | Auto-generated results |
 | `reports/METHODOLOGY.md` | How the tests work and their limits |
 | `reports/linkedin_post.md` | Drafted posts, ready to adapt |
 

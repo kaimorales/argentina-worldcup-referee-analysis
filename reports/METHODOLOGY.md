@@ -69,6 +69,31 @@ World Cup history as the control**:
 The two lenses agree, which matters: a parametric test and a raw historical ranking both put
 2022 in the extreme tail.
 
+## Third analysis: exposure, scorecard, placebo (`exposure_and_scorecard.py`)
+
+This is what moves the project past a single penalty count.
+
+- **Exposure model.** The key confounder is attacking volume. We control for it with the
+  cleanest available matched comparison: **France, the other 2022 finalist** (same 7 games).
+  France took *more* shots (92 vs 76) for *equal* xG (11.5 vs 11.8) yet drew 2.5x fewer
+  penalties. Penalties-per-shot, per-xG, and per-game all show Argentina at ~2.5–3x France.
+  A team that attacked *more* getting *fewer* penalties is direct evidence the surplus is not
+  a volume artifact. (Confounder acknowledged: Argentina's xG/shot was ~15% higher — better
+  chance locations — but that cannot account for a 3x penalty gap.)
+- **Scorecard.** We report Argentina across seven refereeing-relevant metrics, not just
+  penalties, so the nuance is explicit: favored on penalties, *neutral* on shots (France had
+  more), and *punished* on discipline (16 yellows, 2 penalties conceded). The defensible claim
+  is deliberately narrow.
+- **Placebo control.** We run the identical Poisson outlier test on France. It flags Argentina
+  (p = 0.015) but not France (p = 0.42) — proof the method isn't just detecting "good teams."
+  Historically, no team ever exceeded 4 penalties in an edition, so the placebo also holds
+  across all of World Cup history.
+
+**Data-quality note.** Full 32-team shot data is paywalled/blocked (FBref returns 403 to
+scrapers), so the exposure model is anchored on the two finalists, whose shot/xG/penalty
+figures are individually sourced (xgscore.io). This is the strongest *matched* control but not
+a full-field regression — see TODOs.
+
 ## To strengthen this further (open TODOs)
 
 - Pull all 32 teams' 2022 penalty counts for a full within-tournament permutation test with a

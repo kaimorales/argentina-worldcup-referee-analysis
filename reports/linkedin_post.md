@@ -105,6 +105,36 @@ Code, data, and every source in the repo 👇
 
 ---
 
+## Version E — the France comparison (the single most convincing angle)
+
+"Argentina got the most penalties because they attacked the most." I hear this every time. So
+I checked it against the one team that kills the argument: **France — the other 2022 finalist.**
+
+Same tournament. Same 7 games. Here's the tale of the tape:
+
+• Shots: France **92**, Argentina **76** → *France attacked MORE*
+• xG (chance quality): France **11.5**, Argentina **11.8** → *basically identical*
+• Penalties awarded: France **2**, Argentina **5**
+
+Per 100 shots, **Argentina drew 3× the penalties of a team that shot more often than they did.**
+
+Then the placebo test: I ran the same "is this a statistical outlier?" check on both. Argentina
+trips it hard (p = 0.015). **France doesn't (p = 0.42).** Same elite level, same run to the final
+— the alarm only goes off for one of them. So "it's just what good teams get" doesn't hold.
+
+And to stay honest: this is narrow. The same refs booked Argentina **16 times in 7 games** — the
+most-carded team, in the most-carded match in World Cup history. They weren't handed *everything*.
+They were handed **penalties**, specifically, at a rate no attacking or historical baseline explains.
+
+Outlier? Clearly. Proof of a conspiracy? No — data can't read minds. But "they just attacked more"
+is now officially dead. 📉
+
+Full code, data, and sources in the repo 👇
+
+#DataScience #SportsAnalytics #WorldCup #Statistics #Football
+
+---
+
 ## Version C — the one-liner hook (for the top of the post)
 
 > Argentina won 21.7% of ALL the penalties at the 2022 World Cup — 5 of 23, as 1 of 32
