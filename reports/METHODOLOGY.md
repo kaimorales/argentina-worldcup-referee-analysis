@@ -118,6 +118,28 @@ shootouts excluded).
 This is the honest ceiling: **a real, field-leading anomaly that the innocent explanations
 do not cover — not a proof of intent.**
 
+## Fifth analysis — the structural break (`structural_break.py`) — the one that adds new information
+
+Every other analysis is a 2022 cross-section, so at best it re-expresses the already-known
+fact "Argentina got the most penalties in 2022." This test asks the different, thesis-relevant
+question: **did their treatment change in 2022?**
+
+- **Argentina as their own control, measured relative to the field each tournament.** The
+  field-relative ratio cancels the VAR/era effect (VAR lifted penalties for all teams), leaving
+  only the Argentina-specific component.
+- **Result (StatsBomb, high confidence):** 2018 → 1 penalty in 4 games = 1.10× the field,
+  ranked 19th of 32, Poisson p = 0.60 (indistinguishable from the field). 2022 → 5 in 7 = 4.0×
+  the field, ranked 1st, p = 0.009. The advantage **switches on in 2022**, under identical rules.
+- **Confounder control.** "They attack a lot / they're elite" is held constant — Argentina were
+  elite finalists in 2014 and a strong side in 2018, and drew ~0–1 penalties. Attacking didn't
+  change in 2022; the penalty rate did.
+- **Honesty flags.** The rigorous claim uses only the two StatsBomb years. Pre-VAR counts
+  (2010/2014) are approximate corroboration; 2026 is provisional. The contrast is 5-vs-1, small
+  counts — so this shows a *break*, not a proven mechanism, and certainly not intent.
+
+Why this one matters: it is the first result that is **not** common knowledge restated. "Argentina
+always got these calls" is falsified — they were the 19th-most-penalized team as recently as 2018.
+
 ## To strengthen this further (open TODOs)
 
 - ~~Pull all 32 teams' 2022 penalty counts for a full within-tournament test with a

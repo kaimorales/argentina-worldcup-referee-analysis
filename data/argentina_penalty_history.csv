@@ -1,0 +1,6 @@
+tournament,era,result,games,pens_for,field_pens_per_game,field_rank,source,confidence,note
+2010,pre-VAR,Quarter-final,5,0,0.12,,web,low,"No open-play penalty identified; pre-VAR; approximate; verify"
+2014,pre-VAR,Runner-up,7,0,0.10,,web,low,"Reached final in 7 games; Higuain penalty appeal DENIED in final; Messi's only 2014 penalty was in a shootout"
+2018,VAR,Round of 16,4,1,0.227,19,StatsBomb,high,"Field-average rate (1.10x); ranked 19th of 32 in penalties"
+2022,VAR,Champion,7,5,0.180,1,StatsBomb,high,"All-time record; 3.98x the field rate; ranked 1st of 32"
+2026,VAR,ongoing,5,2,,,web,provisional,"Provisional; ~0.40/game (~2x baseline); both penalties missed by Messi"

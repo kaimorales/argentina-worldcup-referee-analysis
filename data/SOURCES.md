@@ -34,6 +34,14 @@ for / 2 against in 7 games.**
 - Per-team fields derived: non-penalty shots, non-penalty xG, penalties for/against, fouls
   won/committed, yellow/red cards.
 
+**Historical StatsBomb seasons (for the structural-break test):**
+- `data/statsbomb_team_stats_2018.csv` — 2018 World Cup (season_id 3), all 64 matches. Confirms
+  the reported 29 total penalties. **Argentina 2018: 1 penalty for, 2 against, 4 games — 1.10x
+  the field per-game rate, ranked 19th of 32.**
+- `data/argentina_penalty_history.csv` — Argentina's per-tournament penalty timeline. 2018 &
+  2022 rows are StatsBomb (high confidence); 2010/2014 are approximate (web, low confidence);
+  2026 is provisional. 1986 (season_id 54) open data is only partial (3 matches) and is not used.
+
 ## Historical baseline / control group (high confidence)
 
 Used by `src/baseline_comparison.py` to place Argentina against World Cup history.

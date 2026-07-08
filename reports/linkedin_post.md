@@ -105,6 +105,41 @@ Code, data, and every source in the repo 👇
 
 ---
 
+## Version G — the structural break (⭐ the strongest, most original post — lead with this)
+
+"Argentina always gets the penalties." Everyone repeats it. I found data that says it only
+became true in 2022.
+
+I pulled StatsBomb event data for the 2018 and 2022 World Cups — same VAR rules, four years
+apart — and measured Argentina's penalties *relative to the rest of the field* each time (that
+cancels out the fact that VAR gave everyone more penalties).
+
+2018: Argentina were awarded **1 penalty in 4 games.** That's the field-average rate. They
+ranked **19th of 32 teams.** Completely unremarkable.
+
+2022: **5 penalties in 7 games — 4× the field average, 1st of 32,** the most any team has ever
+been awarded in a single World Cup.
+
+19th → 1st. Same tournament, same rules, no change in how much they attacked (they were elite
+finalists in 2014 too — and reached that final across 7 games with *zero* open-play penalties).
+
+Statistically: in 2018 their penalty count is exactly what the field predicts (p = 0.60 — no
+anomaly). In 2022 it isn't (p = 0.009). The Argentina-specific advantage doesn't exist in the
+data until 2022 — and it's still there in 2026.
+
+I want to be honest about the limits: this is a 5-vs-1 penalty contrast, small numbers, and it
+is NOT proof anyone rigged anything — data can't show intent. But the popular version of the
+story — "they've always been FIFA's darlings" — is simply false. Whatever changed, changed in
+2022.
+
+That's the real finding: not that Argentina gets penalties, but that they suddenly started.
+
+Full data, code, and sources (StatsBomb) in the repo 👇
+
+#DataScience #SportsAnalytics #WorldCup #Statistics #StatsBomb #Football
+
+---
+
 ## Version F — the full 32-team model (the rigorous flex)
 
 I got tired of the "Argentina just attacked more, that's why they got penalties" replies. So I
